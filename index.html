@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     * {
+  box-sizing: border-box;
+}
+
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 100px;
+}
+.left, .middle {
+  width: 25%;
+}
+
+.right {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}           
+    span.a {
+        display: block;
+        height: 1%;
+        font-size: 16px;
+    }
+    
+    div {
+        border: 2px snone gray;
+        margin: 0px;
+        margin-bottom: 5px;   
+        }
+
+    .button-submit {
+
+        background-color: blue;
+        border: none;
+        color: white;
+        padding: 5px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 10px 2px;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 5px;
+        width: 100%
+        
+    }
+
+    .button-kontak {
+        background-color:blue;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 10px;
+        padding: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 5px;
+        width: 60px;
+    }
+
+    .button-resume {
+        background-color: white;
+        border: green;
+        color: green;
+        text-align: center;
+        text-decoration: none;
+        font-size: 10px;
+        padding: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 5px;
+        width: 60px;
+        
+    }
+    
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      color: grey;
+    }
+
+    li a {
+      font-style: arial;
+      font-size:small;
+      text-decoration: none;
+      color:gray;
+    }
+
+    li {
+    list-style-type:none;
+    display: inline;
+    background-color: none;
+    padding: 5px;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div style="margin-left: 20%; margin-right:20%">
+    <ul>
+        <li><b><a href="http://www.google.com">HOME</a></b></li> 
+        <li><b><a href="http://www.google.com">PRODUCT</a></b></li>
+        <li><b><a href="http://www.google.com">GALERRY</a></b></li>
+        <li><b><a href="http://www.google.com">BLOG</a></b></li>
+        <li><b><a href="http://www.google.com">INVENTORY</a></b></li><br>
+    </ul>
+    </div>
+<div class="row" style="display: flex;margin-left: 20%; margin-right:20%">
+    <div class="column left;" style="align-items:justify-content; width: 100px; overflow:hidden; border-radius: 50px">
+        <img src="https://ae01.alicdn.com/kf/HTB1EMsmB49YBuNjy0Ffq6xIsVXaO/Kucing-Muda-Mengambil-Gambar-Kucing-Lucu-Kuning-Lingkaran-Hewan-Peliharaan-Bunga-Matahari-Kucing-Tutup-Kepala-Pakaian.jpg" width= 75px height="75px">
+    </div>    
+
+    <div class="column middle" style="margin:0mm; border:none;">
+    
+        <b><p id="target-nama"style="font-size: 25px; margin: 0px;">Nama Anda</p></b>
+        <p id="target-role"style="margin:1px">Front End Designer</p>
+        <button class="button-kontak">Kontak</button>
+        <button class="button-resume">Resume</button>
+    </div>
+
+    <div class="column right" style="width: 300px; padding: 5px; border: none">
+        <b><label style="border:none; margin-left: 10px; margin-right: 10px; height:10px; width: 350px;" for="">Availability</label></b>
+        <label id="target-Availability" style="border:none; text-align: right;margin-left: 10px" for="">Full Time</label><br>
+        <b><label style="border:none; margin-left: 10px; margin-right: 10px;width:350 px;" for="">Usia</label></b>
+        <label id="target-Usia"style="border:none; text-align: right;margin-left: 57px" for="">19</label><br>
+        <b><label style="margin-left: 10px; margin-right: 10px;" for="">Lokasi</label></b>
+        <label id="target-Lokasi"style="margin-left: 40px;" for="">Jakarta, Indonesia</label><br>
+        <b><label style="margin-left: 10px; margin-right: 10px;" for="">Pengalaman</label></b>
+        <label id="target-YearsExperience"style="margin-left: 1px;" for="">2</label><br>
+        <b><label style="margin-left: 10px; margin-right: 10px;" for="">Email</label></b>
+        <label id="target-Email"style="margin-left: 45px;" for="">Developer@gmail.com</label><br>
+    </div>
+</div>
+
+    <div style="margin-left: 20%; margin-right:20%"
+        
+            
+            <b></b>
+        <label style= "margin-bottom: 3px;";" for="">Nama</label><br>
+        <input id="nama" style= "width: 100%; color: black; border:solid; border-radius: 2px;"; type="text" placeholder=""><br>
+        <label for="">Role</label><br>
+        <input id="role" style= "width: 100%; color: black; border: solid; border-radius: 2px;"; type= "text"><br>
+        <label for="">Availability</label><br>
+        <input id="Availability" style= "width: 100%; color: black; border: solid; border-radius: 2px"; type="text"><br>
+        <label for="">Age</label><br>
+        <input id="Usia"style= "width: 100%; color: black; border: solid; border-radius: 2px" type="number"><br>
+        <label for="">Lokasi</label><br>
+        <input id="Lokasi" style= "width: 100%; color: black; border: solid; border-radius: 2px" type="text">
+        <label for="">Years Experience</label><br>
+        <input id="YearsExperience" style= "width: 100%; color: black; border: solid; border-radius: 2px" type="number">
+        <label for="">Email</label><br>
+        <input id="Email" style= "width: 100%; color: black; border: solid; border-radius: 2px" type="Email">
+
+        <button type="button" onclick="submitForm()" class=button-submit> submit</button>
+        </form>
+
+    <script>
+        function submitForm() {
+            var nama = document.getElementById('nama').value
+            document.getElementById("target-nama").innerHTML = nama
+        
+            var role = document.getElementById('role').value
+            document.getElementById("target-role").innerHTML = role
+
+            var Availability = document.getElementById('Availability').value
+            document.getElementById("target-Availability").innerHTML = Availability
+
+            var Usia = document.getElementById('Usia').value
+            document.getElementById("target-Usia").innerHTML = Usia
+
+            var Lokasi = document.getElementById('Lokasi').value
+            document.getElementById("target-Lokasi").innerHTML = Lokasi
+
+            var YearsExperience = document.getElementById('YearsExperience').value
+            document.getElementById("target-YearsExperience").innerHTML = YearsExperience
+
+            var Email = document.getElementById('Email').value
+            document.getElementById("target-Email").innerHTML = Email
+        
+        }
+    </script>
+     
+    </div>
+
+
+</body>
+</html>
